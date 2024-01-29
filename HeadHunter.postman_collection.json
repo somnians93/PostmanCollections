@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "07a6ad7b-f622-4d40-8153-d5085d3808b3",
+		"name": "HeadHunter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31312370",
+		"_collection_link": "https://solar-moon-532741.postman.co/workspace/AndrejManual~92c6007b-6eba-433c-8a29-f9495bd368de/collection/31312370-07a6ad7b-f622-4d40-8153-d5085d3808b3?action=share&source=collection_link&creator=31312370"
+	},
+	"item": [
+		{
+			"name": "запрос за компанией",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hh.ru/employers?text=такси&page=2&per_page=50",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"employers"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "такси"
+						},
+						{
+							"key": "area",
+							"value": "3",
+							"disabled": true
+						},
+						{
+							"key": "only_with_vacancies",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "per_page",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос за компанией",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hh.ru/employers/5008932",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hh",
+						"ru"
+					],
+					"path": [
+						"employers",
+						"5008932"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
